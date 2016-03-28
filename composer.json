@@ -21,7 +21,9 @@
         "2amigos/yii2-gallery-widget": "~1.0",
         "xj/yii2-supersized-widget": "*",
         "wadeshuler/yii2-sliderrevolution": "@dev",
-        "2amigos/yii2-google-maps-library": "*"
+        "2amigos/yii2-google-maps-library": "*",
+        "kartik-v/yii2-widget-fileinput": "@dev",
+        "dixonsatit/yii2-thai-year-formatter": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

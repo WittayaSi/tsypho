@@ -1,0 +1,32 @@
+
+/*------------------------------------------------------------------
+
+	BACK TO TOP
+
+-------------------------------------------------------------------*/
+.back-to-top {
+    border-radius: 5px;
+    bottom: 50px;
+    color: #fff;
+    display: block;
+    font-size: 40px;
+    height: 58px;
+    position: fixed;
+    right: -200px;
+    text-align: center;
+    transition: all 800ms ease 0s;
+    visibility: hidden;
+    width: 60px;
+	line-height: 50px;
+    z-index: 500;
+}
+.back-to-top{ background:#7CFF5B}
+.back-to-top:focus, .back-to-top:hover {
+    color: #fff;
+    transition: all 800ms ease 0s;
+}
+.back-to-top.to-top {
+    right: 20px;
+    transition: all 800ms ease 0s;
+    visibility: visible;
+}

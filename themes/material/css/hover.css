@@ -1630,6 +1630,7 @@
   transition-property: color;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  color: green;
 }
 .hvr-bounce-to-right:before {
   content: "";

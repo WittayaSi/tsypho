@@ -19,17 +19,24 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-sm-6">
             <ul class="list-group well" style="height: 400px">
                 <li class="list-group-item" style="text-align: center"><h3>สำนักงานสาธารณสุขอำเภอท่าสองยาง</h3></li>
-                <li class="list-group-item" style="font-size: 15px;text-align: center"><i class="fa fa-home fa-2x"></i> ที่อยู่ :: 401 หมู่ 2 ต.แม่ต้าน อ.ท่าสองยาง จ.ตาก 63150</li>
-                <li class="list-group-item col-sm-offset-3" style="font-size: 15px"><i class="fa fa-phone-square fa-2x"></i> โทรศัพท์ :: 055-589116</li>
-                <li class="list-group-item col-sm-offset-3" style="font-size: 15px"><i class="fa fa-fax fa-2x"></i> แฟกซ์ :: 055-589116</li>
-                <li class="list-group-item col-sm-offset-3" style="font-size: 15px"><i class="fa fa-envelope fa-2x"></i> อีเมลล์ :: it_tsy_ph@hotmail.com</li>
+                <li class="list-group-item" style="font-size: 15px;text-align: center">
+                    <i class="fa fa-home fa-2x"></i> ที่อยู่ :: 401 หมู่ 2 ต.แม่ต้าน อ.ท่าสองยาง จ.ตาก 63150</li>
+                <li class="list-group-item col-sm-offset-3" style="font-size: 15px">
+                    <i class="fa fa-phone-square fa-2x"></i> โทรศัพท์ :: 055-589116</li>
+                <li class="list-group-item col-sm-offset-3" style="font-size: 15px">
+                    <i class="fa fa-fax fa-2x"></i> แฟกซ์ :: 055-589116</li>
+                <li class="list-group-item col-sm-offset-3" style="font-size: 15px">
+                    <i class="fa fa-envelope fa-2x"></i> อีเมลล์ :: it_tsy_ph@hotmail.com</li>
+                <li class="list-group-item col-sm-offset-3" style="font-size: 15px">
+                    <i class="fa fa-facebook-square fa-2x"></i> 
+                    <a href="https://www.facebook.com/groups/192188887491010/" style="text-decoration: none" target="_blank">facebook :: บุคลากรสังกัด สสอ.ท่าสองยาง</a></li>
 
             </ul>
         </div>
         <div class="col-sm-6">
-                <?php
-                require 'google_map.php';
-                ?>
+            <?php
+            require 'google_map.php';
+            ?>
         </div>
     </div>
 
@@ -37,13 +44,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
-        <div class="alert alert-success" align="center" style="height: 50px">
+            <div class="alert alert-success" align="center" style="height: 50px">
                 ขอบคุณ เราจะทำการติดต่อกลับโดยด่วน
             </div>
 
         <?php else: ?>
 
-            <div class="alert alert-info">
+            <div class="alert alert-success">
                 <p align="center"> 
                     ติดต่อเราทาง Email
                 </p>

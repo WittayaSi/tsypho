@@ -1,11 +1,14 @@
 <?php
 /* @var $this yii\web\View */
 
+use yii\helpers\Url;
+use app\models\Information;
+
 $this->title = 'สำนักงานสาธารณสุขอำเภอท่าสองยาง';
 ?>
 
 
-<div class="container well">
+<div class="container well fadeInBlock">
     <div class="row">
         <div class="col-sm-3">
             <?php require_once('sidebar.php') ?>
@@ -13,33 +16,31 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
         <div class="col-sm-9">
             <div class="site-index">
 
-                <div>
-                    <h3><i class="fa fa-newspaper-o"></i> ประชาสัมพันธ์</h3>
+                <div style="text-align: center">
+                    <h3><i class="fa fa-bullhorn"></i> แจ้งด่วน</h3>
                 </div> 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-info" style="width: 0%"></div>
+                    <div class="progress-bar"></div>
                 </div>
-
+                <?php
+                $data = Information::find()->where(['id' => Information::find()->max('id')])->one();
+                ($data['pic_name'] != NULL) ? $img_name = $data['pic_name'] : $img_name = 'noimage.jpg';
+                ?>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h2>Heading</h2>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                            fugiat nulla pariatur.</p>
-
-                        <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-                    </div>
-                    <div class="col-sm-6">
-                        <h2>Heading</h2>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                            fugiat nulla pariatur.</p>
-
-                        <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="" id="info">
+                            <center>
+                                <img src="<?= Yii::getAlias('@web') ?>/img/uploads/<?= $img_name ?>" height="70%" width="70%">
+                            </center>
+                            <div class="row">
+                                <!--                            <div class="col-sm-8 col-sm-offset-2" style="text-align: center;margin-top: 20px">
+                                <?php //$data['title'] ?>
+                                                            </div>-->
+                            </div>
+                            <div align="right">
+                                <a class="btn btn-success btn-block" href="<?= Url::to(['/site/information-view', 'id' => $data['id']]) ?>" style="margin-bottom: -10px">อ่าน &raquo;</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,43 +48,94 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
     </div>
 </div>
 
-<!-- menu and news -->
-<div class="container well" style="margin-top: -15px">
+
+<div class="container well fadeInBlock" style="margin-top: -10px">
 
     <div class="row">
+        <!-- Start Activity -->
+
         <div class="col-sm-6">
-            <h3><i class="fa fa-th-large"></i> เมนู</h3>
+            <div>
+                <h3><i class="fa fa-database"></i> กิจกรรม</h3>
+            </div> 
             <div class="progress">
                 <div class="progress-bar"></div>
             </div>
-
             <div class="row">
-                
+                <div class="col-sm-6">
+
+                    <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
+                    <div class="blog-date">
+                        <p class="day">7</p>
+                        <p class="monthyear">มี.ค.2559</p>
+                    </div>
+                    <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่</p>
+                    <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
+                    <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก</p>
+                    <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
+                    <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก</p>
+                    <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
+                    <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก</p>
+                    <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
+                </div>
             </div>
         </div>
+        <!-- End Activity -->
+
+        <!-- Start news -->
 
         <div class="col-sm-6">
             <h3><i class="fa fa-newspaper-o"></i> ข่าวล่าสุด</h3>
             <div class="progress">
                 <div class="progress-bar"></div>
             </div>
-            <div class="row">
-                
-            </div>
+            <?php
+            for ($i = 0; $i <= 5; $i++) {
+                ?>
+                <div class="font_news ">
+                    <div class="media hvr-bounce-to-right" id="box-lastnews" style="margin-bottom: 10px;width: 100%">
+                        <span class="pull-left">
+                            <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" class="img-responsive img_news" style="max-width: 120px">
+                        </span>
+                        <div class="media-body" style="padding: 10px;color">
+                            สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก
+                        </div>
+                        <font class="pull-right" style="font-size: 12px;padding-right: 5px">
+                        24 มี.ค. 2559 10:17:53
+                        </font>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
+            <a href="#" class="btn btn-success pull-right">ดูทั้งหมด <i class="fa fa-angle-double-right"></i></a>
         </div>
+        <!-- End news -->
     </div>
 </div>
-<!-- End menu and news -->
 
-<!-- Data Center -->
-<div class="container well" style="margin-top: -15px">
+
+
+<div class="container well fadeInBlock" style="margin-top: -10px;">
+    <!-- Data Center -->
+
     <div>
-        <h3><i class="fa fa-database"></i> Data Center</h3>
+        <h3><i class="fa fa-database"></i> งานข้อมูล</h3>
     </div> 
     <div class="progress">
         <div class="progress-bar"></div>
     </div>
-
     <div class="row">
         <div class="col-sm-6">
             <h4>อำเภอ</h4>
@@ -119,7 +171,6 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
             </div>
         </div>
 
-        <div class="bottom-line"></div>
         <div class="col-sm-6">
             <h4>จังหวัด</h4>
             <div class="progress">
@@ -169,8 +220,9 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
 <!-- End Data Center -->
 
 
+
 <!-- Another Website -->
-<div class="container well" style="margin-top: -15px">
+<div class="container well fadeInBlock" style="margin-top: -10px">
     <div>
         <h3><i class="fa fa-th"></i> เว็บไซต์ที่เกี่ยวข้อง</h3>
     </div> 
@@ -180,11 +232,11 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
     <!-- first row -->
     <div class="row">
         <div class="col-sm-3">
-            <a href="http://www.thasongyang.com" target="_blank" style="text-decoration: none">
+            <a href="http://www.moph.go.th/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
                         <div class="img-wrapper">
-                            <img src="<?= Yii::getAlias('@web') ?>/img/another/img_tsyhos.jpg" class="img-responsive" style="height: 100px">
+                            <img src="<?= Yii::getAlias('@web') ?>/img/another/img_moph.jpg" class="img-responsive" style="height: 100px">
                         </div>
                         <p class="detail" style="font-weight: bold;font-size: 15px; margin-top: -10px">โรงพยาบาลท่าสองยาง</p>
                     </div>
@@ -192,13 +244,25 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
             </a>
         </div>
         <div class="col-sm-3">
-            <a href="http://123.242.165.136/?module=file&pages=list_file_other&cate_file_id=22" target="_blank" style="text-decoration: none">
+            <a href="http://www.tako.moph.go.th/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
                         <div class="img-wrapper">
-                            <img src="<?= Yii::getAlias('@web') ?>/img/another/img_ttak.jpg" class="img-responsive" style="height: 100px">
+                            <img src="<?= Yii::getAlias('@web') ?>/img/another/img_tak.jpg" class="img-responsive" style="height: 100px">
                         </div>
-                        <p class="detail" style="font-weight: bold;font-size: 15px; margin-top: -10px">เขตพัฒนาเศรษฐกิจพิเศษตาก</p>
+                        <p class="detail" style="font-weight: bold;font-size: 15px; margin-top: -10px">สำนักงานสาธารณสุขจังหวัดตาก</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="http://www.thasongyang.com" target="_blank" style="text-decoration: none">
+                <div class="hvr-grow" style="width: 100%">
+                    <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
+                        <div class="img-wrapper">
+                            <img src="<?= Yii::getAlias('@web') ?>/img/another/img_tsyhos.jpg" class="img-responsive" style="height: 100px">
+                        </div>
+                        <p class="detail" style="font-weight: bold;font-size: 15px; margin-top: -10px">โรงพยาบาลท่าสองยาง</p>
                     </div>
                 </div>
             </a>
@@ -215,6 +279,11 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 </div>
             </a>
         </div>
+    </div>
+    <!-- End First Row -->
+
+    <!-- Second Row -->
+    <div class="row">
         <div class="col-sm-3">
             <a href="http://www.tako.moph.go.th/borderhealth/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
@@ -227,11 +296,6 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 </div>
             </a>
         </div>
-    </div>
-    <!-- End First Row -->
-    
-    <!-- Second Row -->
-    <div class="row">
         <div class="col-sm-3">
             <a href="http://203.157.203.22/archives/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
@@ -270,8 +334,8 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
         </div>
     </div>
     <!-- End Second Row -->
-    
-    
+
+
 </div>
 </div>
 <!-- End Another Website -->

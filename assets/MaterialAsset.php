@@ -26,11 +26,16 @@ class MaterialAsset extends AssetBundle {
         'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css',
         //'css/font-awesome.css',
         'css/card-css.css',
-        'css/hover.css'
+        'css/hover.css',
+        'css/fadeIn.css',
+        'css/animate.css',
+        'css/back_to_top.css'
     ];
     public $js = [
         'js/material.min.js',
         'js/ripples.min.js',
+        'js/scroll_down.js',
+        'js/smoothscroll.min.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
