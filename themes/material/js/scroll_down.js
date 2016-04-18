@@ -1,25 +1,3 @@
-//function fadeBlocksIn() {
-//    $('.fadeInBlock').each(function (i) {
-//
-//        var top_of_object = $(this).position().top;
-//        var bottom_of_window = $(window).scrollTop() + $(window).height();
-//
-//        bottom_of_window = bottom_of_window - 50;
-//
-//        if (top_of_object < bottom_of_window) {
-//            $(this).animate({'opacity': '1'}, 500);
-//        }
-//    });
-//}
-//
-//$(function () {
-//    fadeBlocksIn();
-//
-//    $(window).scroll(function () {
-//        fadeBlocksIn();
-//    });
-//});
-
 $(window).ready(function () {
     fadeInBlock = $('.fadeInBlock');
     $("#back-to-top").removeClass('to-top');
@@ -31,17 +9,23 @@ $(window).ready(function () {
 
         if ($(window).scrollTop() > 300) {
             $("#back-to-top").addClass('to-top');
+            $('#first_nav').css('opacity', '0');
+            $('#second_nav').css('margin-top', '0px');
+            $('#item_nav').css({'font-size': '25px'});
         } else {
             $("#back-to-top").removeClass('to-top');
+            $('#first_nav').css('opacity', '1');
+            $('#second_nav').css({'margin-top': '35px'});
+            $('#item_nav').css({'font-size': '14px'});
         }
         /* Check the location of each desired element */
         fadeInBlock.each(function (i) {
 
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
+            //var bottom_of_window1 = bottom_of_window;
 
-            bottom_of_window = bottom_of_window + 500;
-
+            bottom_of_window = bottom_of_window + 700;
             /* If the object is completely visible in the window, fade it it */
             if (bottom_of_window > bottom_of_object) {
                 $(this).addClass('animated fadeIn');

@@ -160,4 +160,9 @@ class SiteController extends Controller {
         }
     }
 
+    public function actionUpload() {
+
+        return $this->render('upload');
+    }
+
 }

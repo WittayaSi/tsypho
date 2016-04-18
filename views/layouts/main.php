@@ -49,28 +49,28 @@ MaterialAsset::register($this);
             </div>
         </div>
 
-        <footer class="navbar navbar-default" style="margin-bottom: 0px;height: 200px">
-
+        <footer class="navbar navbar-default" style="margin-bottom: 0px;height: 270px">
             <div class="container" style="margin-top: 20px">
                 <p style="text-align: center">401 หมู่ 2 ตำบลแม่ต้าน อำเภอท่าสองยาง จังหวัดตาก 63150</p>
                 <p style="text-align: center">055-589116</p>
                 <p style="text-align: center">ลิขสิทธิ์ &copy; ๒๕๕๙ <br>งานเทคโนโลยีสารสนเทศสำนักงานสาธารณสุขอำเภอท่าสองยาง</p>
+
                 <hr>
                 <p style="text-align: center;font-size: 10px">&copy; Create by || Mr.Wittaya Siriporn</p>
-            </div>
-            <div class="pull-right">
-                <!-- Histats.com  START  (standard)-->
-                <script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
-                <a href="http://www.histats.com" target="_blank" title="hit tracker" ><script  type="text/javascript" >
-                    try {
-                        Histats.start(1, 3389948, 4, 408, 270, 55, "00011111");
-                        Histats.track_hits();
-                    } catch (err) {
-                    }
-                    ;
-                    </script></a>
-                <noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3389948&101" alt="hit tracker" border="0"></a></noscript>
-                <!-- Histats.com  END  -->
+                <div class="" align="center">
+                    <!-- Histats.com  START  (standard)-->
+                    <script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+                    <a href="http://www.histats.com" target="_blank" title="hit tracker" ><script  type="text/javascript" >
+                        try {
+                            Histats.start(1, 3389948, 4, 408, 270, 55, "00011111");
+                            Histats.track_hits();
+                        } catch (err) {
+                        }
+                        ;
+                        </script></a>
+                    <noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3389948&101" alt="hit tracker" border="0"></a></noscript>
+                    <!-- Histats.com  END  -->
+                </div>
             </div>
         </footer>
 

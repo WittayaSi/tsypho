@@ -62,29 +62,29 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 <div class="progress-bar"></div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-xs-6 col-lg-6">
 
                     <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
-                    <div class="blog-date">
+                    <div class="blog-date" style="height: 30%;width: 30%">
                         <p class="day">7</p>
                         <p class="monthyear">มี.ค.2559</p>
                     </div>
                     <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่</p>
                     <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
                 </div>
-                <div class="col-sm-6">
+                <div class="ccol-sm-6 col-xs-6 col-lg-6">
                     <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
                     <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก</p>
                     <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-xs-6 col-lg-6">
                     <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
                     <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก</p>
                     <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-xs-6 col-lg-6">
                     <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
                     <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก</p>
                     <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
@@ -144,7 +144,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
             </div>
 
             <div class="row">
-                <div class="col-sm-offset-2 col-sm-4">
+                <div class="col-sm-offset-2 col-sm-4 col-xs-6 col-lg-4">
                     <a href="#" target="_blank" style="text-decoration: none">
                         <div class="hvr-grow-rotate" style="width: 100%">
                             <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -156,7 +156,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-6 col-lg-4">
                     <a href="#" target="_blank" style="text-decoration: none">
                         <div class="hvr-grow-rotate" style="width: 100%">
                             <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -177,7 +177,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 <div class="progress-bar"></div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-6 col-lg-4">
                     <a href="http://www.takis.takpho.go.th" target="_blank" style="text-decoration: none">
                         <div class="hvr-grow-rotate" style="width: 100%">
                             <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -189,7 +189,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-6 col-lg-4">
                     <a href="http://www.thic.takpho.go.th" target="_blank" style="text-decoration: none">
                         <div class="hvr-grow-rotate" style="width: 100%">
                             <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -201,7 +201,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-6 col-lg-4">
                     <a href="http://hdcservice.moph.go.th/" target="_blank" style="text-decoration: none">
                         <div class="hvr-grow-rotate" style="width: 100%">
                             <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -231,7 +231,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
     </div>
     <!-- first row -->
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6 col-lg-3 col-md-6">
             <a href="http://www.moph.go.th/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -243,7 +243,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 </div>
             </a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6 col-lg-3 col-md-6">
             <a href="http://www.tako.moph.go.th/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -255,7 +255,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 </div>
             </a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6 col-lg-3 col-md-6">
             <a href="http://www.thasongyang.com" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -267,7 +267,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 </div>
             </a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6 col-lg-3 col-md-6">
             <a href="http://203.157.203.2/takmoph/cooper/index.php" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -284,7 +284,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
 
     <!-- Second Row -->
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6 col-lg-3 col-md-6">
             <a href="http://www.tako.moph.go.th/borderhealth/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -296,7 +296,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 </div>
             </a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6 col-lg-3 col-md-6">
             <a href="http://203.157.203.22/archives/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -308,7 +308,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 </div>
             </a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6 col-lg-3 col-md-6">
             <a href="http://op.nhso.go.th/op/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">
@@ -320,7 +320,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                 </div>
             </a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6 col-lg-3 col-md-6">
             <a href="http://www.tako.moph.go.th/meeting_system/" target="_blank" style="text-decoration: none">
                 <div class="hvr-grow" style="width: 100%">
                     <div class="container-card" style="max-height: 150px;text-align: center" id="menu-hover">

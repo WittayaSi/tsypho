@@ -6,7 +6,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use yii\helpers\Url
 ?>
-<div class="alert alert-success navbar-fixed-top" style="background: #0f8888">
+<div class="alert alert-success navbar-fixed-top" style="background: #0f8888" id="first_nav">
     <div class="container" style="margin-top: -7px">
         สำนักงานสาธารณสุขอำเภอท่าสองยาง
         <?php
@@ -16,7 +16,7 @@ use yii\helpers\Url
             <?php
         } else {
             ?>
-            <a href="<?= Url::to(['/site/logout']) ?>" class="pull-right" style="text-decoration: none" data-method='POST'><i class="glyphicon glyphicon-log-out"></i> Sign Out(<?= Yii::$app->user->identity->username; ?>)</a>
+            <a href="<?= Url::to(['/site/logout']) ?>" class="pull-right" style="text-decoration: none" data-method='POST'><i class="glyphicon glyphicon-log-out"></i> Sign Out</a>
             <?php
         }
         ?>
@@ -37,6 +37,7 @@ NavBar::begin([
         'class' => 'navbar-success navbar-fixed-top',
         'style' => 'margin-top: 35px',
     ],
+    'id' => 'second_nav'
 ]);
 
 $about_items[] = ['label' => '<i class="fa fa-tags fa-lg"></i> ประวัติความเป็นมา', 'url' => ['site/history']];
@@ -61,6 +62,7 @@ echo Nav::widget([
     'options' => ['class' => 'navbar-nav navbar-left'],
     'encodeLabels' => false,
     'items' => [['label' => 'สสอ.ท่าสองยาง']],
+    'id' => 'item_nav'
 ]);
 
 echo Nav::widget([
