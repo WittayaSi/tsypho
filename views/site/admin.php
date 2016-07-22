@@ -30,7 +30,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="col-sm-4">
             <div class="brn btn-info btn-lg" style="text-align: center">
-                <h2><i class="glyphicon glyphicon-exclamation-sign"></i> ข่าวสาร</h2>
+                <a href="<?= Url::to(['news/index']) ?>" style="text-decoration: none"><font color="white">
+                    <h2><i class="glyphicon glyphicon-exclamation-sign"></i> ข่าวสาร</h2>
+                </a>
             </div>
         </div>
     </div>

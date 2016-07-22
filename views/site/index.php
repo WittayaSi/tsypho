@@ -17,7 +17,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
             <div class="site-index">
 
                 <div style="text-align: center">
-                    <h3><i class="fa fa-bullhorn"></i> แจ้งด่วน</h3>
+                    <h3><i class="fa fa-tags"></i> แจ้งด่วน</h3>
                 </div> 
                 <div class="progress">
                     <div class="progress-bar"></div>
@@ -30,15 +30,10 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                     <div class="col-sm-10 col-sm-offset-1">
                         <div class="" id="info">
                             <center>
-                                <img src="<?= Yii::getAlias('@web') ?>/img/uploads/<?= $img_name ?>" height="70%" width="70%">
+                                <img src="<?= Yii::getAlias('@web') ?>/img/uploads/<?= $img_name ?>" height="65%" width="65%">
                             </center>
-                            <div class="row">
-                                <!--                            <div class="col-sm-8 col-sm-offset-2" style="text-align: center;margin-top: 20px">
-                                <?php //$data['title'] ?>
-                                                            </div>-->
-                            </div>
                             <div align="right">
-                                <a class="btn btn-success btn-block" href="<?= Url::to(['/site/information-view', 'id' => $data['id']]) ?>" style="margin-bottom: -10px">อ่าน &raquo;</a>
+                                <a class="btn btn-success btn-block btn-lg" href="<?= Url::to(['/site/information-view', 'id' => $data['id']]) ?>" style="margin-bottom: -10px">อ่าน..... &raquo;</a>
                             </div>
                         </div>
                     </div>
@@ -56,7 +51,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
 
         <div class="col-sm-6">
             <div>
-                <h3><i class="fa fa-database"></i> กิจกรรม</h3>
+                <h3><i class="fa fa-users"></i> กิจกรรม</h3>
             </div> 
             <div class="progress">
                 <div class="progress-bar"></div>
@@ -94,7 +89,11 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
         <!-- End Activity -->
 
         <!-- Start news -->
-
+        
+        <?php
+            
+        ?>
+        
         <div class="col-sm-6">
             <h3><i class="fa fa-newspaper-o"></i> ข่าวล่าสุด</h3>
             <div class="progress">
@@ -108,7 +107,7 @@ $this->title = 'สำนักงานสาธารณสุขอำเภ�
                         <span class="pull-left">
                             <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" class="img-responsive img_news" style="max-width: 120px">
                         </span>
-                        <div class="media-body" style="padding: 10px;color">
+                        <div class="media-body" style="padding: 10px;">
                             สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก
                         </div>
                         <font class="pull-right" style="font-size: 12px;padding-right: 5px">

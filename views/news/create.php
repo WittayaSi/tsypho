@@ -10,12 +10,14 @@ $this->title = 'Create News';
 $this->params['breadcrumbs'][] = ['label' => 'News', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="news-create">
+<div class="container well">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,
+        'model_pic' => $model_pic,
+        //'model_files' => $model_files
     ]) ?>
 
 </div>

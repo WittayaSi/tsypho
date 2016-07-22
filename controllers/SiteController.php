@@ -29,7 +29,7 @@ class SiteController extends Controller {
                     [
                         'actions' => ['admin'],
                         'allow' => true,
-                        'roles' => [User::USER_ADMIN]
+                        'roles' => ['@']
                     ]
                 ],
             ],
@@ -124,6 +124,10 @@ class SiteController extends Controller {
 
     public function actionMission() {
         return $this->render('mission');
+    }
+    
+    public function actionPersonal() {
+        return $this->render('personal');
     }
 
     public function actionAdmin() {

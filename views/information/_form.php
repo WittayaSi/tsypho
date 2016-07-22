@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\file\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Information */
@@ -16,7 +17,20 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'detial')->textarea(['rows' => 6]) ?>
     
-    <?= $form->field($model, 'file')->fileInput()?>
+    <?= FileInput::widget([
+        'model' => $model,
+        'attribute' => 'file',
+        'pluginOptions' => [
+            'showUpload' => false,
+            'browseLabel' => '',
+            'removeLabel' => '',
+            'mainClass' => 'input-group-lg'
+        ],
+        'options' => ['accept' => 'image/*']
+    ])
+    ?>
+            
+    <?php //echo $form->field($model, 'file')->fileInput()?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

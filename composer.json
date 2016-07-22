@@ -24,7 +24,8 @@
         "2amigos/yii2-google-maps-library": "*",
         "kartik-v/yii2-widget-fileinput": "@dev",
         "dixonsatit/yii2-thai-year-formatter": "*",
-        "perminder-klair/yii2-dropzone": "dev-master"
+        "perminder-klair/yii2-dropzone": "dev-master",
+        "kartik-v/yii2-widget-activeform": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

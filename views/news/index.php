@@ -11,48 +11,28 @@ $this->title = 'News';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container well">
-    <div>
-        <h3><i class="fa fa-database"></i> กิจกรรม</h3>
-    </div> 
-    <div class="progress">
-        <div class="progress-bar"></div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
-            <div class="blog-date">
-                <p class="day">7</p>
-                <p class="monthyear">มี.ค.2559</p>
-            </div>
-            <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่</p>
-            <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
-        </div>
-        <div class="col-sm-3">
-            <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
-            <div class="blog-date">
-                <p class="day">7</p>
-                <p class="monthyear">มี.ค.2559</p>
-            </div>
-            <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก</p>
-            <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
-        </div>
-        <div class="col-sm-3">
-            <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
-            <div class="blog-date">
-                <p class="day">7</p>
-                <p class="monthyear">มี.ค.2559</p>
-            </div>
-            <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก</p>
-            <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
-        </div>
-        <div class="col-sm-3">
-            <img src="<?= Yii::getAlias('@web') ?>/img/img_test_new.jpg" style="width: 100%;height: 100%">
-            <div class="blog-date">
-                <p class="day">7</p>
-                <p class="monthyear">มี.ค.2559</p>
-            </div>
-            <p>สสจ.ตาก จัดประชุมการตรวจสอบข้อมูลบัญชีของหน่วยบริการในสำนักงานสาธารณสุขจังหวัดตาก</p>
-            <p class="pull-right"><a href="#" class="btn btn-success btn-xs">อ่าน... >></a></p>
-        </div>
-    </div>
+
+    <h1><?= Html::encode($this->title) ?></h1>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
+    <p>
+        <?= Html::a('Create News', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            'id',
+            'title',
+            'detial',
+            'link',
+            'created_at',
+            // 'updated_at',
+            // 'user_id',
+
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
 </div>

@@ -14,8 +14,52 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <p>
-        This is the About page. You may modify the following file to customize its content:
+        <div class="row">
+            <center>
+                <img class="col-sm-8 col-sm-offset-2" src="<?= Yii::getAlias('@web') ?>/img/missions/principle.png" height="50%" width="50%">
+            </center>
+        </div>
     </p>
-
-    <code><?= __FILE__ ?></code>
+    <p>
+        <div class="row">
+            <center>
+                <img class="col-sm-8 col-sm-offset-2" src="<?= Yii::getAlias('@web') ?>/img/missions/philosophy.png" height="50%" width="50%">
+            </center>
+        </div>
+    </p>
+    <p>
+        <div class="row">
+            <center>
+                <img class="col-sm-8 col-sm-offset-2" src="<?= Yii::getAlias('@web') ?>/img/missions/thinking.png" height="50%" width="50%">
+            </center>
+        </div>
+    </p>
+    <p>
+        <div class="row">
+            <center>
+                <img class="col-sm-8 col-sm-offset-2" src="<?= Yii::getAlias('@web') ?>/img/missions/goal.png" height="50%" width="50%">
+            </center>
+        </div>
+    </p>
+    <p>
+        <div class="row">
+            <center>
+                <img class="col-sm-8 col-sm-offset-2" src="<?= Yii::getAlias('@web') ?>/img/missions/strategy.png" height="50%" width="50%">
+            </center>
+        </div>
+    </p>
+    <p>
+        <div class="row">
+            <center>
+                <img class="col-sm-12" src="<?= Yii::getAlias('@web') ?>/img/missions/management.jpg" height="50%" width="50%">
+            </center>
+        </div>
+    </p>
+    <p>
+        <div class="row">
+            <center>
+                <img class="col-sm-8 col-sm-offset-2" src="<?= Yii::getAlias('@web') ?>/img/missions/associate.png" height="50%" width="50%">
+            </center>
+        </div>
+    </p>
 </div>

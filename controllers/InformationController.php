@@ -48,7 +48,8 @@ class InformationController extends Controller {
     public function actionIndex() {
         $searchModel = new InformationSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        $dataProvider->setSort(['defaultOrder' => ['id' =>SORT_DESC]]);
+        
         return $this->render('index', [
                     'searchModel' => $searchModel,
                     'dataProvider' => $dataProvider,
@@ -72,13 +73,14 @@ class InformationController extends Controller {
      * @return mixed
      */
     public function actionCreate() {
+        
         $model = new Information();
 
         if ($model->load(Yii::$app->request->post())) {
             $file_name = "";
             if (!empty($model->file = UploadedFile::getInstance($model, 'file'))) {
-                $model->file->saveAs('img/uploads/' . $model->file->baseName . '.' . $model->file->extension);
-                $file_name = $model->file->baseName . '.' . $model->file->extension;
+                $file_name = $model->file->baseName . '_' . rand(0, 10000) . '.' . $model->file->extension;
+                $model->file->saveAs('img/uploads/' . $file_name);
             }
             $model->pic_name = $file_name;
             $model->user_id = Yii::$app->user->identity->id;
@@ -109,8 +111,8 @@ class InformationController extends Controller {
 
         if ($model->load(Yii::$app->request->post())) {
             if (!empty($model->file = UploadedFile::getInstance($model, 'file'))) {
-                $model->file->saveAs('img/uploads/' . $model->file->baseName . '.' . $model->file->extension);
-                $file_name = $model->file->baseName . '.' . $model->file->extension;
+                $file_name = $model->file->baseName . '_' . rand(0, 100) . '.' . $model->file->extension;
+                $model->file->saveAs('img/uploads/' . $file_name);
                 if ($model->pic_name != null) {
                     unlink('img/uploads/' . $model->pic_name);
                 }
