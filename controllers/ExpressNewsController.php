@@ -62,10 +62,10 @@ class ExpressNewsController extends Controller {
         if ($model->load(Yii::$app->request->post())) {
             $file_name = "";
             if (!empty($model->file = UploadedFile::getInstance($model, 'file'))) {
-                $model->file->saveAs('img/uploads/express_news/' . $model->file->baseName . '.' . $model->file->extension);
-                $file_name = $model->file->baseName . '.' . $model->file->extension;
+                $file_name = rand(0, 10000) . '.' . $model->file->extension;
+                $model->file->saveAs('img/uploads/express_news/' . $file_name);
             }
-            $model->pic_name = $file_name;
+            $model->link = $file_name;
             $model->user_id = Yii::$app->user->identity->id;
             //print_r($model);
             //return;

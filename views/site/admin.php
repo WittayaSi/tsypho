@@ -36,6 +36,25 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
     </div>
+    <br>
+    <!-- 2nd row -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="brn btn-success btn-lg" style="text-align: center">
+                <a href="<?= Url::to(['express-news/index']) ?>" style="text-decoration: none"><font color="white">
+                    <h2><i class="glyphicon glyphicon-bullhorn"></i> ข่าวด่วน</h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="brn btn-info btn-lg" style="text-align: center">
+                <a href="<?= Url::to(['news/index']) ?>" style="text-decoration: none"><font color="white">
+                    <h2><i class="glyphicon glyphicon-exclamation-sign"></i> ข่าวสาร</h2>
+                </a>
+            </div>
+        </div>
+    </div>
 
 <!--    <code><?= __FILE__ ?></code>-->
 </div>

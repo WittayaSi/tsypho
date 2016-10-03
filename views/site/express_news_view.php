@@ -43,6 +43,15 @@ $this->params['breadcrumbs'][] = $this->title;
                     }
                 }
                 ?>
+                <br>
+                เอกสารที่เกี่ยวข้อง : : 
+                <a href="<?= Yii::getAlias('@web') ?>/img/uploads/express_news/<?= $model['link'] ?>">
+                <?php
+                if($model['link']){
+                    echo $model['link'];
+                }
+                ?>
+                </a>
             </div>
         </div>
 

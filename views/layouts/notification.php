@@ -8,7 +8,7 @@ use yii\helpers\Url;
 
     <?php
     $model = ExpressNews::find()->orderBy(['id' => SORT_DESC])->limit(3)->all();
-    if ($model) {
+    if (!empty($model)) {
         $id1 = $model['0']['id'];
         $title1 = $model['0']['title'];
         $detial1 = $model['0']['detial'];
